@@ -8,6 +8,8 @@ import cors from 'cors';
 import config from './config/config.js';
 //FIC: Declaramos la variable app igualandola a express
 const app = express();
+//FIC: Establece la conexion a la BD
+import { mongoose } from 'mongoose';
 //FIC: Settings
 app.set('port', config.PORT);
 //FIC: Middlewares generales
